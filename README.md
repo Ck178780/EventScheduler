@@ -2,9 +2,9 @@ I.Design Decisions:
 
 a. This is a simple and straightforward application and does not need complex design patterns.
 
-b. Modular Design: Modularized your code by separating it into different files (e.g., event_class.py, event_scheduler.py, user_interface.py, and test_event_scheduler.py). Each file focuses on specific functionalities, making the code more organized and maintainable.
+b. Modular Design: Modularized the code by separating it into different files (e.g., event_class.py, event_scheduler.py, user_interface.py, and test_event_scheduler.py). Each file focuses on specific functionalities, making the code more organized and maintainable.
 
-c. Object-Oriented Design (OOP): The use of classes (Event and EventScheduler) reflects an object-oriented design. This approach helps encapsulate related functionalities and data within classes, promoting code reuse and clarity.
+c. Object-Oriented Design (OOP): This helps encapsulate related functionalities and data within classes, promoting code reuse and clarity.
 
 d. Error Handling and Validation: The code includes error handling and validation mechanisms. For instance, validate date and time formats, handle invalid inputs gracefully, and raise informative exceptions.
 
@@ -14,13 +14,13 @@ f. Real-Time Feedback: The application provides real-time feedback to the user, 
 
 g. Data Storage: Use a simple in-memory structure to store events within the EventScheduler class. 
 
-h. Code Readability: The code is well-structured and adheres to Pythonic principles. The use of docstrings, meaningful variable and function names, and comments enhances code readability.
+h. Unit Testing: The inclusion of unit tests in test_event_scheduler.py demonstrates a commitment to ensuring the correctness of the code. This helps catch issues early and supports code maintenance.
 
-i. Unit Testing: The inclusion of unit tests in test_event_scheduler.py demonstrates a commitment to ensuring the correctness of the code. This helps catch issues early and supports code maintenance.
+![UnitTest.png](UnitTest.png)
 
-l. Search Functionality: The addition of search functionality enhances the application's utility, allowing users to find events based on titles, dates, or keywords in descriptions.
+i. Search Functionality: The addition of search functionality enhances the application's utility, allowing users to find events based on titles, dates, or keywords in descriptions.
 
-m. User Prompting for Duplicate Titles: When adding or editing events, the application checks for duplicate titles and informs the user if the title is already in use. This prevents unintentional duplication of events.
+j. User Prompting for Duplicate Titles: When adding or editing events, the application checks for duplicate titles and informs the user if the title is already in use. This prevents unintentional duplication of events.
 
 II. Design Principles Applied.
 
