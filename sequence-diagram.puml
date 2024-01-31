@@ -1,0 +1,35 @@
+@startuml
+actor User
+participant EventScheduler
+participant Event
+
+User -> EventScheduler: Choose option 1 (Add Event)
+User -> EventScheduler: Enter event details
+EventScheduler -> Event: Create Event object
+EventScheduler -> Event: Validate date and time
+EventScheduler -> Event: Add event to the list
+EventScheduler --> User: Show success or error message
+
+User -> EventScheduler: Choose option 2 (List Events)
+EventScheduler -> EventScheduler: Sort events by date and time
+EventScheduler --> User: Display list of events
+
+User -> EventScheduler: Choose option 3 (Delete Event)
+User -> EventScheduler: Enter event title to delete
+EventScheduler -> EventScheduler: Search for event by title
+EventScheduler -> Event: Delete event from the list
+EventScheduler --> User: Show success or error message
+
+User -> EventScheduler: Choose option 4 (Search Events)
+User -> EventScheduler: Enter search query
+EventScheduler -> EventScheduler: Search for events by title, date, or keyword
+EventScheduler --> User: Display matching events
+
+User -> EventScheduler: Choose option 5 (Edit Events)
+User -> EventScheduler: Enter event title to edit
+EventScheduler -> EventScheduler: Search for event by title
+EventScheduler -> Event: Edit event details
+EventScheduler --> User: Show success or error message
+
+User -> EventScheduler: Choose option 6 (Quit)
+@enduml
