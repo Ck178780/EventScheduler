@@ -24,7 +24,9 @@ Provides real-time feedback to users, communicating outcomes (success or errors)
 Utilizes a simple in-memory structure to store events within the EventScheduler class.
 
 ### h. Unit Testing:
-Includes unit tests in test_event_scheduler.py for early issue detection and code maintenance. [Unit Test Output](ScreenShots/UnitTest.png)
+Includes unit tests in test_event_scheduler.py for early issue detection and code maintenance.
+
+![UnitTest.png](ScreenShots/UnitTest.png)
 
 ### i. Search Functionality:
 Enhances utility with search functionality, allowing users to find events based on titles, dates, or keywords.
