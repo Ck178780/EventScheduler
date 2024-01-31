@@ -16,7 +16,7 @@ g. Data Storage: Use a simple in-memory structure to store events within the Eve
 
 h. Unit Testing: The inclusion of unit tests in test_event_scheduler.py demonstrates a commitment to ensuring the correctness of the code. This helps catch issues early and supports code maintenance.
 
-![UnitTest.png](UnitTest.png)
+![UnitTest.png](ScreenShots/UnitTest.png)
 
 i. Search Functionality: The addition of search functionality enhances the application's utility, allowing users to find events based on titles, dates, or keywords in descriptions.
 
@@ -47,40 +47,51 @@ III. Sequence Diagram:
 ![sequence-diagram.png](sequence-diagram.png)
 
 Class Diagram:
+
 ![class-diagram.png](sequence-diagram.png)
 
 IV. Application Usage Screenshots:
 
 a. User Menu:
 The user receives a list of six options to choose from.
-![Menu.png](Menu.png)
+
+![Menu.png](ScreenShots/Menu.png)
 
 b. The user can select '1' to add an event.
-![AddEvent.png](AddEvent.png)
+
+![AddEvent.png](ScreenShots/AddEvent.png)
 
 c. The user can select '2' to list all events.
-![ListEvents.png](ListEvents.png)
+
+![ListEvents.png](ScreenShots/ListEvents.png)
 
 d. The user can select '3' to delete and event.
-![DeleteEvents.png](DeleteEvents.png)
+
+![DeleteEvents.png](ScreenShots/DeleteEvents.png)
 
 e. The user can select '4' to search events.
-![SearchEvents.png](SearchEvents.png)
+
+![SearchEvents.png](ScreenShots/SearchEvents.png)
 
 f. The user can select '5' to edit an event.
+
 ![EditEvents.png](EditEvents.png)
 
 g. The user can select '6' to exit the application.
-![ExitEventSchedular](ExitEventSchedular.png)
 
-h. The user can't add duplicate events:
-![AddDuplicateEvents.png](AddDuplicateEvents.png)
+![ExitEventSchedular](ScreenShots/ExitEventSchedular.png)
+
+h. The user can't add duplicate events.
+
+![AddDuplicateEvents.png](ScreenShots/AddDuplicateEvents.png)
 
 i. The users input is validated in real time to avoid the application crashing.
-![AddEventValidation.png](AddEventValidation.png)
+
+![AddEventValidation.png](ScreenShots/AddEventValidation.png)
 
 j. The user is notified immediately when an event is updated successfully.
-![EventUpdate.png](EventUpdate.png)
+
+![EventUpdate.png](ScreenShots/EventUpdate.png)
 
 
 
