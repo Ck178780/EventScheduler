@@ -1,98 +1,102 @@
-I.Design Decisions:
+# README
 
-a. This is a simple and straightforward application and does not need complex design patterns.
+## I. Design Decisions:
 
-b. Modular Design: Modularized the code by separating it into different files (e.g., event_class.py, event_scheduler.py, user_interface.py, and test_event_scheduler.py). Each file focuses on specific functionalities, making the code more organized and maintainable.
+### a. Simple Application Design:
+This application follows a simple and straightforward design, eliminating the need for complex design patterns.
 
-c. Object-Oriented Design (OOP): This helps encapsulate related functionalities and data within classes, promoting code reuse and clarity.
+### b. Modular Design:
+Code is modularized into different files (e.g., event_class.py, event_scheduler.py, user_interface.py, and test_event_scheduler.py), focusing on specific functionalities for improved organization and maintainability.
 
-d. Error Handling and Validation: The code includes error handling and validation mechanisms. For instance, validate date and time formats, handle invalid inputs gracefully, and raise informative exceptions.
+### c. Object-Oriented Design (OOP):
+Encapsulation of related functionalities and data within classes promotes code reuse and clarity.
 
-e. User Interface (UI): The command-line interface provides a simple and user-friendly way to interact with the application. Users can easily understand and navigate through the options.
+### d. Error Handling and Validation:
+Includes error handling and validation mechanisms, such as validating date and time formats, handling invalid inputs gracefully, and raising informative exceptions.
 
-f. Real-Time Feedback: The application provides real-time feedback to the user, informing them about successful operations or errors. For instance, when adding, editing, or deleting events, the program communicates the outcome to the user.
+### e. User Interface (UI):
+The command-line interface provides a simple and user-friendly interaction with clear options for users.
 
-g. Data Storage: Use a simple in-memory structure to store events within the EventScheduler class. 
+### f. Real-Time Feedback:
+Provides real-time feedback to users, communicating outcomes (success or errors) during operations like adding, editing, or deleting events.
 
-h. Unit Testing: The inclusion of unit tests in test_event_scheduler.py demonstrates a commitment to ensuring the correctness of the code. This helps catch issues early and supports code maintenance.
+### g. Data Storage:
+Utilizes a simple in-memory structure to store events within the EventScheduler class.
 
-![UnitTest.png](ScreenShots/UnitTest.png)
+### h. Unit Testing:
+Includes unit tests in test_event_scheduler.py for early issue detection and code maintenance. [Unit Test Output](ScreenShots/UnitTest.png)
 
-i. Search Functionality: The addition of search functionality enhances the application's utility, allowing users to find events based on titles, dates, or keywords in descriptions.
+### i. Search Functionality:
+Enhances utility with search functionality, allowing users to find events based on titles, dates, or keywords.
 
-j. User Prompting for Duplicate Titles: When adding or editing events, the application checks for duplicate titles and informs the user if the title is already in use. This prevents unintentional duplication of events.
+### j. User Prompting for Duplicate Titles:
+Checks for duplicate titles when adding or editing events, preventing unintentional duplication.
 
-II. Design Principles Applied.
+## II. Design Principles Applied:
 
-a. "DRY" Principle: Reduce redundancy, create more modular and maintainable code. Ensure the code is easy to manage and improve the overall readability and efficiency of development.Ensure a more scalable workbase in future should the need arise.
+### a. "DRY" Principle:
+Reduces redundancy, creates modular and maintainable code, ensuring scalability in the future.
 
-b. Separation of Concerns (SoC): The code is divided into multiple files, each with a specific responsibility. For example, there are separate files for the Event class, the EventScheduler class, and the user interface (user_interface.py). The TestEventScheduler class is a set of unit tests designed to verify the correct behavior of the EventScheduler. This separation makes the code modular and easier to maintain.
+### b. Separation of Concerns (SoC):
+Code is divided into multiple files with specific responsibilities, promoting modularity and ease of maintenance.
 
-c. Single Responsibility Principle (SRP): Each class has a single responsibility. The Event class handles the representation and validation of individual events, the EventScheduler class manages the collection of events, and the user_interface.py file focuses on user interaction.
+### c. Single Responsibility Principle (SRP):
+Each class has a single responsibility, promoting maintainability and clarity.
 
-d. Modularity: The code is modular, making it easy to extend or modify specific functionalities. For instance, adding new features or changing the implementation of existing ones can be done without affecting other parts of the code.
+### d. Modularity:
+The code is modular, facilitating easy extension or modification of specific functionalities.
 
-e. Readability: Meaningful variable and method names, consistent indentation, and concise yet informative comments contribute to its readability.
+### e. Readability:
+Meaningful names, consistent indentation, and concise comments contribute to code readability.
 
-f. Use of Functions and Classes: The code utilizes functions and classes to encapsulate functionality. Functions are used to perform specific tasks, and classes are used to represent objects with related properties and behaviors.
+### f. Use of Functions and Classes:
+Utilizes functions and classes to encapsulate functionality, promoting clear organization.
 
-g. Error Handling: The code incorporates error handling mechanisms to gracefully manage invalid inputs or unexpected situations. For example, the code checks for valid date and time formats, handles events not found during deletion, and informs the user about duplicate titles.
+### g. Error Handling:
+Incorporates mechanisms to gracefully handle invalid inputs or unexpected situations.
 
-h. Efficiency: While not explicitly mentioned, the code aims for efficiency by using appropriate data structures (e.g., lists) and algorithms. The sorting of events based on date and time is one example of optimizing functionality.
+### h. Efficiency:
+Aims for efficiency using appropriate data structures and algorithms.
 
-i. Documentation: Docstrings are provided for functions and classes, offering a clear description of purpose, parameters, and return values. This contributes to code documentation and makes it easier for others to understand and use the code.
+### i. Documentation:
+Provides docstrings for functions and classes, enhancing code documentation.
 
+## III. Diagrams:
 
-III. Sequence Diagram:
-![sequence-diagram.png](sequence-diagram.png)
+### Sequence Diagram:
+![Sequence Diagram](sequence-diagram.png)
 
-Class Diagram:
+### Class Diagram:
+![Class Diagram](class-diagram.png)
 
-![class-diagram.png](sequence-diagram.png)
+## IV. Application Usage Screenshots:
 
-IV. Application Usage Screenshots:
+### a. User Menu:
+![User Menu](ScreenShots/Menu.png)
 
-a. User Menu:
-The user receives a list of six options to choose from.
+### b. Add Event:
+![Add Event](ScreenShots/AddEvent.png)
 
-![Menu.png](ScreenShots/Menu.png)
+### c. List Events:
+![List Events](ScreenShots/ListEvents.png)
 
-b. The user can select '1' to add an event.
+### d. Delete Event:
+![Delete Event](ScreenShots/DeleteEvents.png)
 
-![AddEvent.png](ScreenShots/AddEvent.png)
+### e. Search Events:
+![Search Events](ScreenShots/SearchEvents.png)
 
-c. The user can select '2' to list all events.
+### f. Edit Event:
+![Edit Event](ScreenShots/EditEvents.png)
 
-![ListEvents.png](ScreenShots/ListEvents.png)
+### g. Exit Application:
+![Exit Application](ScreenShots/ExitEventSchedular.png)
 
-d. The user can select '3' to delete and event.
+### h. Prevent Duplicate Events:
+![Prevent Duplicate Events](ScreenShots/AddDuplicateEvents.png)
 
-![DeleteEvents.png](ScreenShots/DeleteEvents.png)
+### i. Real-Time Validation:
+![Real-Time Validation](ScreenShots/AddEventValidation.png)
 
-e. The user can select '4' to search events.
-
-![SearchEvents.png](ScreenShots/SearchEvents.png)
-
-f. The user can select '5' to edit an event.
-
-![EditEvents.png](EditEvents.png)
-
-g. The user can select '6' to exit the application.
-
-![ExitEventSchedular](ScreenShots/ExitEventSchedular.png)
-
-h. The user can't add duplicate events.
-
-![AddDuplicateEvents.png](ScreenShots/AddDuplicateEvents.png)
-
-i. The users input is validated in real time to avoid the application crashing.
-
-![AddEventValidation.png](ScreenShots/AddEventValidation.png)
-
-j. The user is notified immediately when an event is updated successfully.
-
-![EventUpdate.png](ScreenShots/EventUpdate.png)
-
-
-
-
+### j. Event Update Notification:
+![Event Update Notification](ScreenShots/EventUpdate.png)
