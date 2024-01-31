@@ -1,0 +1,30 @@
+@startuml
+class Event {
+  - title: str
+  - description: str
+  - datetime: datetime
+  + __init__(title: str, description: str, date: str, time: str)
+  + __str__(): str
+}
+
+class EventScheduler {
+  - events: List[Event]
+  + __init__()
+  + add_event(event: Event): None
+  + list_events(): None
+  + delete_event(title: str): None
+  + edit_event(title: str): None
+  + search_events(query: str): List[Event]
+}
+
+class UserInterface {
+  - event_scheduler: EventScheduler
+  + __init__(event_scheduler: EventScheduler)
+  + main(): None
+  + get_valid_date(): str
+  + get_valid_time(): str
+}
+
+EventScheduler --> Event
+UserInterface --> EventScheduler
+@enduml
